@@ -3,7 +3,7 @@
 ## Overview
 
 This is a simple working example of a flash arbitrage smart contract, whereby within a single transaction it:
-1. Instantly flash borrows a certain asset (ETH by default) from Aave lending pools with zero collateral
+1. Instantly flash borrows a certain asset (ETH in this example) from Aave lending pools with zero collateral
 2. Calls UniswapV2 Router02 to wrap the flash liquidity of ETH into WETH and exchange it for DAI tokens
 3. Checks the exchange rate of DAI back into ETH on Sushiswap V1
 4. Calls SushiswapV1 Router02 to swap the DAI back into WETH and then ETH
