@@ -175,7 +175,7 @@ contract FlashArbTrader is FlashLoanReceiverBase {
      function getPathForTokenToETH(address ERC20Token) private view returns (address[] memory) {
         address[] memory path = new address[](2);
         path[0] = ERC20Token;
-        path[1] = uniswapV2Router.WETH();
+        path[1] = sushiswapV1Router.WETH();
         
         return path;
     }
