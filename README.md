@@ -20,7 +20,7 @@ The contract can be plonked directly onto Remix, using solidity compiler 0.6.12,
 
 On deployment, set the following parameters:
 
-![](https://raw.githubusercontent.com/fifikobayashi/Flash-Arbitrage-Smart-Contract/master/Deployment.PNG)
+![](https://raw.githubusercontent.com/fifikobayashi/Flash-Arb-Trader/master/images/Deployment.PNG)
 
 - ***_AaveLendingPool:*** the LendingPoolAddressesProvider address corresponding to the deployment environment. see [Deployed Contract Instances](https://docs.aave.com/developers/deployed-contracts/deployed-contract-instances).
 - ***_UniswapV2Router:*** the Router02 address for UniswapV2 see [here](https://uniswap.org/docs/v2/smart-contracts/router02/).
@@ -33,7 +33,7 @@ On deployment, set the following parameters:
 
 On execution, set the following parameters:
 
-![](https://raw.githubusercontent.com/fifikobayashi/Flash-Arbitrage-Smart-Contract/master/Execution.PNG)
+![](https://raw.githubusercontent.com/fifikobayashi/Flash-Arb-Trader/master/images/Execution.PNG)
 
 - ***_flashAsset:*** address of the asset you want to flash loan. e.g. ETH is 0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE. If you want to flash anything else see [Reserved Assets](https://docs.aave.com/developers/deployed-contracts/deployed-contract-instances#reserves-assets) but you will need to adjust the executeArbitrage() function accordingly.
 - ***_flashAmount:*** how much of _flashAsset you want to borrow, demoniated in wei (e.g. 1000000000000000000 for 1 ether).
@@ -45,6 +45,8 @@ On execution, set the following parameters:
 
 
 ## Result
+
+![](https://raw.githubusercontent.com/fifikobayashi/Flash-Arb-Trader/master/images/TXResult.PNG)
 
 If all goes well, a successful execution of this contract looks like [this (Ropsten testnet)](https://ropsten.etherscan.io/tx/0xc1da19c7a5e189b372ec3b310453d7ee267da5df661ee61833230470e5b97fd8).
 
