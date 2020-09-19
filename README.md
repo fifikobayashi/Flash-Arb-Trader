@@ -35,9 +35,9 @@ On execution, set the following parameters:
 
 ![](https://raw.githubusercontent.com/fifikobayashi/Flash-Arbitrage-Smart-Contract/master/Execution.PNG)
 
-- ***_flashAsset:*** address of the asset you want to flash loan. See [Reserved Assets](https://docs.aave.com/developers/deployed-contracts/deployed-contract-instances#reserves-assets).
+- ***_flashAsset:*** address of the asset you want to flash loan. e.g. ETH is 0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE. If you want to flash anything else see [Reserved Assets](https://docs.aave.com/developers/deployed-contracts/deployed-contract-instances#reserves-assets) but you will need to adjust the executeArbitrage() function accordingly.
 - ***_flashAmount:*** how much of _flashAsset you want to borrow, demoniated in wei (e.g. 1000000000000000000 for 1 ether).
-- ***_daiTokenAddress:*** for this demo we're swapping with the DAI token, so lookup the reversed address of the DAI token. See [Reserved Assets](https://docs.aave.com/developers/deployed-contracts/deployed-contract-instances#reserves-assets).
+- ***_daiTokenAddress:*** for this demo we're swapping with the DAI token, so lookup the reserved address of the DAI token. See [Reserved Assets](https://docs.aave.com/developers/deployed-contracts/deployed-contract-instances#reserves-assets).
 - ***_amountToTrade:*** how much of the newly acquired _flashAsset you'd like to use as part of this arbitrage.
 - ***_tokensOut:*** how much of the ERC20 tokens from the first swap would you like to swap back to complete the arb. Denominated in actual tokens, i.e. 1 = 1 DAI token.
 - Click 'transact' and approve in Metamask.
